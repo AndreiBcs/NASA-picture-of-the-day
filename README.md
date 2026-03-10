@@ -1,1 +1,1 @@
-# NASA-picture-of-the-day
+Get images from [NASA APOD api](https://api.nasa.gov/).

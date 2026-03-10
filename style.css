@@ -1,0 +1,115 @@
+::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+::-webkit-datetime-edit-month-field { color: blue; }
+::-webkit-datetime-edit-day-field { color: green; }
+::-webkit-datetime-edit-year-field { color: purple; }
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { background: orange; }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+}
+@media (max-width: 600px) {
+    body::-webkit-scrollbar {
+        display: none; 
+    } 
+}
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+@media (min-width: 800px) {
+    header{
+        border-radius: 0 0 5px 5px;
+    }
+}
+h1{
+    font-size: 2rem;
+    margin: 0.7em 0;
+}
+p{
+    font-size: 1.2rem;
+}
+main{
+    padding: 1rem;
+}
+form{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 1rem auto;
+    text-align: center;
+}
+input{
+    padding: 0.5rem;
+    width: 250px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+button{
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    height: 2.3rem;
+    font-size: 1rem;
+}
+.result{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px 10px;
+    padding: 20px 30px;
+    width: 100%;
+}
+.image-card{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: fit-content;
+    max-width: min(100%, 900px);
+}
+.image-card img{
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: min(100%, 800px);
+    max-height: 70vh;
+}
+.image-card p{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+.error{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    text-align: center;
+    opacity: 0;
+}
